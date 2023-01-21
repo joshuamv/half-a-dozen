@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(9, 67, 117);
+    overflow:hidden;
+}
+
+.intro {
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.mute {
+    position: absolute;
+    bottom: -16px;
+    right: -16px;
+    z-index: 19;
+}
+
+.ui {
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 50px -20px #1c48408f;
+}
+
+.blur {
+    position: absolute;
+    height: 60vh;
+    width: 60vw;
+    filter: blur(200px);
+    transition: 4s;
+    transition-timing-function: ease-in-out;
+}
+
+.sq1 {
+    left: 15vw;
+    top: 35vh;
+    background-color: #1c2f4b;
+    transform: skew(5deg, 0deg);
+    transition: 4s;
+    transition-timing-function: ease-in-out;
+}
+
+.sq2 {
+    left: 50vw;
+    top: -5vh;
+    background-color: #131632;
+    transform: skew(15deg, 15deg);
+    transition: 4s;
+    transition-timing-function: ease-in-out;
+}
+
+.sq3 {
+    scale: 1.4;
+    left: 10vw;
+    top: -5vh;
+    background-color: #ffffff;
+    transform: skew(-15deg,-15deg);
+    opacity: 0.6;
+    transition: 4s;
+    transition-timing-function: ease-in-out;
+}
+
+.sq4 {
+    left: 50vw;
+    top: 60vh;
+    scale: 1.6;
+    background-color: #008777;
+    background-color: #F8743C;
+    transform: skew(0deg, 35deg);
+    transition: 4s;
+    transition-timing-function: ease-in-out;
+}
+
+.centralSq {
+    left: 25vw;
+    top: 25vh;
+    background-color: #008e8e;
+    opacity: 0.8;
+    transform: skew(15deg, 15deg);
+    transition: 4s;
+    transition-timing-function: ease-in-out;
+}
+
+.sqBreathe {
+    scale: 1.05;
+    opacity: 0.55;
+    transform: rotate(-30deg);
+}
+
+.sqBreathe1 {
+    scale: 1.08;
+    opacity: 0.65;
+    transform: rotate(-15deg);
+}
+
+.subtitles{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 48vw;
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.189em;
+}
+
+.subtitles-hide{
+    display: none;   
+}
+
+
+
+.canvasp5{
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    height: 15vh;
+    width: 20vh;
+    z-index: 0;
+    /* background-color: #008777; */
+}
+
+.amplitudeChange{
+    scale: 0.4;
+    scale: 3;
+    opacity: 0.4;
+    opacity: 3;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.legendHover{
+    position: absolute;
+    top: 5vh;
+    left: 37.4vw;
+    height: 15vh;
+    width: 20vh;
+}
+
+.startButton{
+    position: absolute;
+    top: 90vh;
+    left: 40vw;
+    height: 4vh;
+    width: 30vh;
+    z-index: 20;
+    /* background-color: #F8743C; */
+    opacity: 0.3;
+}

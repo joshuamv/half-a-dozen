@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style-old.css">
+
+  <audio id="song" src="audio/interview2.mp3"></audio>
+</head>
+
+<body>
+  <img class="intro" id="intro" src="intro.svg" alt="">
+
+  <img class="mute" id="mute" src="unmuted.svg" alt="">
+
+  <div class="sq4 blur amplitudeChange" id="sq4"></div>
+  <div class="sq2 blur" id="sq2"></div>
+  <div class="sq1 blur" id="sq1"></div>
+  <div class="centralSq blur" id="centralSq"></div>
+  <div class="sq3 blur" id="sq3"></div>
+  <img class="ui" id="ui" src="prototype.svg" alt="">
+
+  <div class="canvasp5" id="canvas-container"></div>
+
+  <div class="subtitles" id="subtitlesDiv">
+    these are the subtitles of what’s being told
+  </div>
+
+  <div class="legendHover" id="legendHover"></div>
+  <div class="startButton" id="startButton"></div>
+</body>
+</html>

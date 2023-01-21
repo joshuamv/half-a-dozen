@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="viz-div" id="viz-div">
+    <div class="sq4 blur amplitudeChange" id="sq4"></div>
+    <div class="sq2 blur" id="sq2"></div>
+    <div class="sq1 blur" id="sq1"></div>
+    <div class="centralSq blur" id="centralSq"></div>
+    <div class="sq3 blur" id="sq3"></div>
+    <img class="mute" id="mute" src="img/unmuted.svg" alt="">
+
+    <video id="interviewAudio" controls>
+      <source src="audio/interview1.mp3" type="audio/mp3">
+      <track src="captions/interview1.vtt" kind="subtitles" srclang="en" label="English" default>
+    </video>
+    <div class="subtitles subtitles-hide" id="subtitlesDiv">
+      So, my parents were born in Colombia...
+    </div>
+
+    <div class="subtitles subtitles-hide" id="subtitlesDiv2">
+      In a town called Santuario, in eastern Antioquia.
+    </div>
+  </div>
+
+  <div class="data-div" id="data-div">
+    <img class="intro" id="intro" src="intro.svg" alt="">
+    <img class="ui" id="ui" src="prototype.svg" alt="">
+    <img class="legend" id="legend" src="img/legend1.svg" alt="">
+
+  </div>
+
+  <div class="canvasp5" id="canvas-container"></div>
+</body>
+
+  <div class="startButton" id="startButton"></div>
+</html>
