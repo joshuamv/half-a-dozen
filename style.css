@@ -27,6 +27,7 @@ body {
     position: relative;
     transition: all 1.5s;
     transition-timing-function: ease-in-out;
+    display: flex;
 }
 
 .main-div{
@@ -84,29 +85,29 @@ body {
 
 
 /* Subtitles */
-
 video {
-    height: 100%;
     width: 100%;
-    object-fit: initial;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-top: 33vh;
+    
  }
  
- ::cue {
-    position: absolute;
-    top: 0px;
-    left: 0vw;
-    height: 80vh;
-    margin: 10vh 3vw 10vh 3vw;
-    width: 44vw;
-    text-align: justify;
+ video::cue {
+    /* position: absolute;
     text-justify: inter-word;
-    font-family: 'avenir', serif;
-    font-size: 160px;
+    font-size: 80px;
     color: white;
-    background-color: red;
-    text-transform: uppercase;
+    transition: 2s ease-in-out; */
+    text-align: justify;
+    font-family: 'avenir', serif;
+    font-size: 20px;
+    background-color: rgba(255, 0, 0, 0);
     letter-spacing: 0.18em;
-    transition: 2s ease-in-out;
+    text-transform: uppercase;
  }
 
 .viz-div .subtitles{

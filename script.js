@@ -40,7 +40,7 @@ $(document).ready(function(){
 
         setTimeout(function(){
             soundFile.play();
-            interviewAudio.play();
+            // $("#interviewAudio")[0].play();
         }, 4000);
 
         isPlaying = true;
