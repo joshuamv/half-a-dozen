@@ -6,6 +6,42 @@ let amplitude;
 let isPlaying = false;
 let bgSong;
 
+var interview1text = [
+    "So, my parents were born in Colombia...",
+    "In a town called Santuario, in eastern Antioquia.",
+    "My dad came from a very humble family...",
+    "They lived near a rural community called Cruces.",
+    "My dad went to primary school in Cruces...",
+    "When his teacher realized how smart he was...",
+    "She asked the town's priest to help him continue studying...",
+    "Since in Cruces they only had a primary school.",
+    "My dad? He was happy...",
+    "Studying was very important for him.",
+    "He was the only one in his family that finished high-school...",
+    "With a lot of hardships, though...",
+    "He'd iron his classmates' clothes...",
+    "To be able to pay for his studies.",
+    "My mom comes from a family from Santuario, as well...",
+    "A family that was prosperous at the time...",
+    "They had a tableware business.",
+    "My mom grew up in a very big family...",
+    "They were sixteen children.",
+    "My grandma was very strict...",
+    "And that influenced my mom's personality...",
+    "I think her mom was simply too rigid and strict.",
+    "So when my mom fell in love with my dad...",
+    "Her mom and her brothers didn't accept him...",
+    "Because he had darker skin.",
+    "My mom's family had light skin...",
+    "Blue eyes, green eyes...",
+    "And also because he came from a poor family.",
+    "So, in the beginning he'd visit her...",
+    "But my grandma would sit in the window next to them...",
+    "While they talked, she'd sit next to them.",
+    "Eventually, they prohibited my dad from visiting...",
+    "So he started sending her letters."
+    ];    
+
 
 $(document).ready(function(){
 
@@ -159,7 +195,10 @@ function subtitles(seconds) {
     showCaption("subtitlesDiv", (seconds*7)+1000);
     hideCaption("subtitlesDiv2", seconds*7+1500);
     changeCaption("subtitlesDiv2", (seconds*7)+2500, "Since in Cruces they only had a primary school.");
-
+    
+    //counter for the index of interview1text from [0 to 44]
+    //counter for the seconds of the audio
+    //if statements with each second in the video
 }
 
 
