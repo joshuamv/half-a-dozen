@@ -1,8 +1,7 @@
 
 let amplitudeMapped = 1;
 let soundFile;
-let interviewAudio = $("#interviewAudio")[0];
-let musicFile;
+let interviewAudio;
 let amplitude;
 let isPlaying = false;
 let bgSong;
@@ -12,9 +11,15 @@ $(document).ready(function(){
 
     bgSong = document.createElement('audio');
     bgSong.setAttribute('src', 'audio/song1.mp3');
+
+    interviewAudio = $("#interviewAudio")[0];
     
     // Initialize p5
     new p5(amplitudeAudio);
+    $("#mute").click(function(){
+        soundFile.volume = soundFile.volume ? 0 : 1;
+        bgSong.volume = soundFile.volume ? 0 : 1;
+    });
 
     $("#ui").click(function(){
         if (isPlaying) {
@@ -40,8 +45,11 @@ $(document).ready(function(){
 
         setTimeout(function(){
             soundFile.play();
-            $("#interviewAudio")[0].play();
-        }, 4000);
+            interviewAudio.play();
+            interviewAudio.onplaying = function() {
+                interviewAudio.muted = true;
+              }        
+            }, 4000);
 
         isPlaying = true;
 
