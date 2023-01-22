@@ -40,12 +40,12 @@ $(document).ready(function(){
 
         setTimeout(function(){
             soundFile.play();
-            // $("#interviewAudio")[0].play();
+            $("#interviewAudio")[0].play();
         }, 4000);
 
         isPlaying = true;
 
-        subtitles(4000);
+        // subtitles(4000);
     });
 
     setInterval(function(){
